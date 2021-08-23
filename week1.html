@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Week 1</title>
+  </head>
+  <body>
+    <h1>Create An Account</h1>
+
+    <!-- labe : 폼의 양식에 이름 붙이는 태그  // label의 for 값과 양식의 id값이 같으면 작동 <-->
+    <!-- required : type에 알맞는 값이 채워져 있는 유무를 확인한다. <-->
+    <form method="post" action="">
+        <br> <label for="first-name">First Name:</label>
+             <input name="first-name" id = "first-name" type="text" placeholder="First-name" required>
+
+        <br> <label for="last-name">Last Name:</label>
+             <input name = "last-name" type="text"  id="last-name" placeholder="Last-name"  required>
+
+        <br> <label for="username">Username:</label>
+             <input name = "username" type="text"  id="username" placeholder="Username"  required>
+
+        <br> <label for="email">eEmail:</label>
+             <input type="email" name="email" id="email" placeholder="Email" required>
+
+        <!-- pattern : password의 길이를 조절하게 해준다.<-->
+        <br> <label for="password">Password:</label>
+             <input type="password" name="password" id="password" placeholder="Password" pattern={10,} required title="= 10이상의 문자를 입력하세요">
+
+        <br> <label for="date">Birthday:</label>
+             <input type="date" name="date" id="date" required>
+
+        <!-- max, min : 최대 최소의 값 지정 // step : 총 길이를 몇으로 나누는지 결정 //  list : 눈금 표시한다.<-->
+        <!-- option : 태그들의 요소의 항복을 정의할 떄 이용.<-->
+        <br> <label for="happy">How happy are you?</label>
+             <input required type="range" id="happy" name="happy" list="steplist">
+        <datalist id= steplist>
+             <option>0</option>
+             <option>10</option>
+             <option>20</option>
+             <option>30</option>
+             <option>40</option>
+             <option>50</option>
+             <option>60</option>
+             <option>70</option>
+             <option>80</option>
+             <option>90</option>
+             <option>100</option>
+        </datalist>
+
+        <br> <label for="color">What is your fav.color?</label>
+             <input type="color" name="color" value="#000000">
+
+        <br> <button type="submit">Create Account</button>
+
+        </form>
+      </body>
+    </html>
+
+  </body>
+</html>

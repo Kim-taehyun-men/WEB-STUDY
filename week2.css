@@ -1,0 +1,46 @@
+html,body
+{
+  overflow:hidden;
+  margin: 0px;
+  border: 10px solid white;
+  width: 99%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f89b00;
+}
+/* justify-content (en-US) — 주축에 대해 flex 항목들을 정렬하는 방식을 제어. flex 컨테이너에 지정하는 속성. */
+/* align-items (en-US) — 교차축에 대해 flex 항목들을 정렬하는 방식을 제어. flex 컨테이너에 지정하는 속성. */
+ /* flex CSS 속성은 하나의 플렉스 아이템이 자신의 컨테이너가 차지하는 공간에 맞추기 위해 크기를 키우거나 줄이는 방법을 설정하는 속성입니다.  */
+/* margin CSS 속성은 요소의 네 방향 바깥 여백 영역을 설정합니다. */
+/* border는 테두리를 만드는 속성입니다. 위, 오른쪽, 아래, 왼쪽 선을 한 번에 정합니다. */
+
+.container
+{
+  width: 25%;
+  height: 50%;
+  background-color: #fbceb1;
+  border: 2px solid #000000;
+
+  flex-direction:column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item
+{
+  margin: 30px;
+  width: 15%;
+  height: 25%;
+  background-color: green;
+  border: 3px solid white;
+}
+.item2
+{
+  margin: 30px;
+  width: 70%;
+  height: 50%;
+  background-color: green;
+  border: 3px dashed white;
+}
